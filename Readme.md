@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Бортник](https://up.htmlacademy.ru/adaptive/18/user/1123853).
-* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
+* Наставник: [Андрей Островский](https://up.htmlacademy.ru/adaptive/18/user/198062).
 
 ---
 
