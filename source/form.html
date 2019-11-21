@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo logo">
-      <img class="logo__image" src="img/logo-mobile-header-svg.svg" wifth="191" height="39" alt="Логотип Cat Energy">
+      <img class="logo__image" src="img/logo-mobile.svg" wifth="191" height="39" alt="Логотип Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Кнопка открывающая и закрывающая меню"></button>
@@ -28,11 +28,97 @@
   </header>
   <main>
     <h1>Подбор программы</h1>
+    <section class="profile">
+      <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="profile__wrapper">
+          <h2 class="visually-hidden">Информация о коте</h2>
+          <p class="profile__item">
+            <label class="profile__label" for="name">Имя:*</label>
+            <input class="profile__text" type="text" id="name" name="name" placeholder="Барсик" required>
+          </p>
+          <p class="profile__item">
+            <label class="profile__label" for="weight">Вес (кг):*</label>
+            <input class="profile__text" type="text" id="weight" name="weight" placeholder="7" required>
+          </p>
+          <p class="profile__item">
+            <label class="profile__label" for="age">Возраст (лет):</label>
+            <input class="profile__text" type="text" id="age" name="age" placeholder="7">
+          </p>
+        </div>
+        <div class="profile__wrapper">
+          <p class="profile__item-radio">
+            <label class="profile__label">
+              <input type="radio" name="weight-loss" value="Похудение">
+              Похудение
+            </label>
+          </p>
+          <p class="profile__item-radio">
+            <label class="profile__label">
+              <input type="radio" name="gain" value="Набор массы">
+              Набор массы
+            </label>
+          </p>
+          <p class="profile__item-radio">
+            <label class="profile__label">
+              <input type="radio" name="need-help" value="Не знаю (Нужен ваш совет)">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </p>
+        </div>
+        <div class="profile__wrapper">
+          <h2 class="profile__title">Контактные данные<br> (владельца кота)</h2>
+          <p class="profile__item">
+            <label class="profile__label" for="email">E-mail:*</label>
+            <input class="profile__text profile__text--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </p>
+          <p class="profile__item">
+            <label class="profile__label" for="tel">Телефон:*</label>
+            <input class="profile__text profile__text--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+          </p>
+          <p>
+            <label class="profile__label-comment" for="comment">Комментарий</label>
+            <textarea class="profile__comment" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+          </p>
+        </div>
+        <fieldset class="profile__add">
+          <legend class="profile__legend">Дополнительно</legend>
+          <ul class="profile__list">
+            <li class="profile__item-add">
+              <input type="checkbox" id="sweetener" name="sweetener" checked />
+              <label class="profile__label-check" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="profile__item-add">
+              <input type="checkbox" id="water" name="water" />
+              <label class="profile__label-check" for="parking">Питьевая вода</label>
+            </li>
+            <li class="profile__item-add">
+              <input type="checkbox" id="milk" name="milk" />
+              <label class="profile__label-check" for="milk">Молоко</label>
+            </li>
+            <li class="profile__item-add">
+              <input type="checkbox" id="vitamin" name="vitamin" />
+              <label class="profile__label-check" for="vitamin">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="profile__button button" type="submit">Отправить заявку</button>
+        <small class="profile__note">
+          <sup>*</sup> — Обязательные поля
+        </small>
+      </form>
+    </section>
+    <section class="map">
+      <div class="map__wrapper">
+        <b class="map__cooperation">приглашаем<br> к сотрудничеству<br> дилеров!</b>
+        <p class="map__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo logo">
-      <img class="logo__footer" src="img/footer-logo-svg.svg" width="128" height="24" alt="Логотип Cat Energy">
-    </a>>
+      <img class="logo__footer" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+    </a>
     <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
