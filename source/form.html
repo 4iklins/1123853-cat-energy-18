@@ -27,83 +27,78 @@
     </nav>
   </header>
   <main>
-    <h1>Подбор программы</h1>
     <section class="profile">
+      <h1 class="profile__title page-title">Подбор программы</h1>
       <p class="profile__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="profile__wrapper">
-          <h2 class="visually-hidden">Информация о коте</h2>
-          <p class="profile__item">
-            <label class="profile__label" for="name">Имя:*</label>
-            <input class="profile__text" type="text" id="name" name="name" placeholder="Барсик" required>
+      <form class="profile__form form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__wrapper">
+          <legend class="visually-hidden">Информация о коте</legend>
+          <p class="form__item">
+            <label class="form__label" for="name">Имя:*</label>
+            <input class="form__field" type="text" id="name" name="name" placeholder="Барсик" required>
           </p>
-          <p class="profile__item">
-            <label class="profile__label" for="weight">Вес (кг):*</label>
-            <input class="profile__text" type="text" id="weight" name="weight" placeholder="7" required>
+          <p class="form__item">
+            <label class="form__label" for="weight">Вес (кг):*</label>
+            <input class="form__field" type="text" id="weight" name="weight" placeholder="7" required>
           </p>
-          <p class="profile__item">
-            <label class="profile__label" for="age">Возраст (лет):</label>
-            <input class="profile__text" type="text" id="age" name="age" placeholder="7">
+          <p class="form__item">
+            <label class="form__label" for="age">Возраст (лет):</label>
+            <input class="form__field" type="text" id="age" name="age" placeholder="7">
           </p>
-        </div>
-        <div class="profile__wrapper">
-          <p class="profile__item-radio">
-            <label class="profile__label">
-              <input type="radio" name="weight-loss" value="Похудение">
-              Похудение
-            </label>
+        </fieldset>
+        <fieldset class="form__wrapper">
+          <legend class="visually-hidden">Тип программы</legend>
+          <p class="form__item-radio">
+            <input class="form__radio" type="radio" name="program-choose" id="weight-loss" value="Похудение" checked>
+            <label class="form__label" for="weight-loss">Похудение</label>
           </p>
-          <p class="profile__item-radio">
-            <label class="profile__label">
-              <input type="radio" name="gain" value="Набор массы">
-              Набор массы
-            </label>
+          <p class="form__item-radio">
+            <input class="form__radio" type="radio" name="program-choose" id="gain" value="Набор массы">
+            <label class="form__label" for="gain">Набор массы</label>
           </p>
-          <p class="profile__item-radio">
-            <label class="profile__label">
-              <input type="radio" name="need-help" value="Не знаю (Нужен ваш совет)">
-              Не знаю (Нужен ваш совет)
-            </label>
+          <p class="form__item-radio">
+            <input class="form__radio" type="radio" name="program-choose" id="need-help" value="Не знаю (Нужен ваш совет)">
+            <label class="form__label" for="need-help">Не знаю (Нужен ваш совет)</label>
           </p>
-        </div>
-        <div class="profile__wrapper">
-          <h2 class="profile__title">Контактные данные<br> (владельца кота)</h2>
-          <p class="profile__item">
-            <label class="profile__label" for="email">E-mail:*</label>
-            <input class="profile__text profile__text--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+        </fieldset>
+        <fieldset class="form__wrapper">
+          <legend class="form__title">Контактные данные<br> (владельца кота)</legend>
+          <p class="form__item">
+            <label class="form__label" for="email">E-mail:*</label>
+            <input class="form__field form__field--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
           </p>
-          <p class="profile__item">
-            <label class="profile__label" for="tel">Телефон:*</label>
-            <input class="profile__text profile__text--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+          <p class="form__item">
+            <label class="form__label" for="tel">Телефон:*</label>
+            <input class="form__field form__field--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
           </p>
-          <p>
-            <label class="profile__label-comment" for="comment">Комментарий</label>
-            <textarea class="profile__comment" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+          <p class="form__item-comment">
+            <label class="form__label-comment" for="comment">Комментарий</label>
+            <textarea class="form__comment" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
           </p>
-        </div>
-        <fieldset class="profile__add">
-          <legend class="profile__legend">Дополнительно</legend>
-          <ul class="profile__list">
-            <li class="profile__item-add">
-              <input type="checkbox" id="sweetener" name="sweetener" checked />
-              <label class="profile__label-check" for="sweetener">Сахарозаменитель</label>
+        </fieldset>
+        <fieldset class="form__add">
+          <legend class="form__legend">Дополнительно</legend>
+          <ul class="form__list">
+            <li class="form__item-add">
+              <input class="form__check" type="checkbox" id="sweetener" name="add" value="Сахарозаменитель" checked>
+              <label class="form__label-check" for="sweetener">Сахарозаменитель</label>
             </li>
-            <li class="profile__item-add">
-              <input type="checkbox" id="water" name="water" />
-              <label class="profile__label-check" for="parking">Питьевая вода</label>
+            <li class="form__item-add">
+              <input class="form__check" type="checkbox" id="water" name="add" value="Питьевая вода">
+              <label class="form__label-check" for="parking">Питьевая вода</label>
             </li>
-            <li class="profile__item-add">
-              <input type="checkbox" id="milk" name="milk" />
-              <label class="profile__label-check" for="milk">Молоко</label>
+            <li class="form__item-add">
+              <input class="form__check" type="checkbox" id="milk" name="add" value="Молоко">
+              <label class="form__label-check" for="milk">Молоко</label>
             </li>
-            <li class="profile__item-add">
-              <input type="checkbox" id="vitamin" name="vitamin" />
-              <label class="profile__label-check" for="vitamin">Витамины</label>
+            <li class="form__item-add">
+              <input class="form__check" type="checkbox" id="vitamin" name="add" value="Витамины">
+              <label class="form__label-check" for="vitamin">Витамины</label>
             </li>
           </ul>
         </fieldset>
-        <button class="profile__button button" type="submit">Отправить заявку</button>
-        <small class="profile__note">
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <small class="form__note">
           <sup>*</sup> — Обязательные поля
         </small>
       </form>
