@@ -1,13 +1,13 @@
-.logo{
-  display:inline-block;
+.logo {
+  display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
 
   &:hover,
-  &:focus{
+  &:focus {
     opacity: 0.8;
   }
-  &:active{
+  &:active {
     opacity: 0.6;
   }
   background-color: #ffffff;

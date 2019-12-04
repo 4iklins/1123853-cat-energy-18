@@ -1,15 +1,15 @@
-.copyright{
-  display:flex;
+.copyright {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.copyright__link{
+.copyright__link {
   display: block;
-  width:34px;
-  height:37px;
-  fill:#666666;
+  width: 34px;
+  height: 37px;
+  fill: #666666;
 }
-.copyright__text{
+.copyright__text {
   font-family: Arial;
   font-size: 16px;
   font-weight: normal;
@@ -19,10 +19,10 @@
   letter-spacing: normal;
 }
 .copyright__link:hover,
-.copyright__link:focus{
+.copyright__link:focus {
   fill: #68b738;
 }
-.copyright__link:active{
+.copyright__link:active {
   fill: #68b738;
   opacity: 0.3;
 }
