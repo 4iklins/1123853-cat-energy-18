@@ -1,6 +1,5 @@
 .programs {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include block-padding;
   box-sizing: border-box;
   background-color: #ffffff;
 }
