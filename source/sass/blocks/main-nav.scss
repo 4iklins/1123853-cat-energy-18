@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
 }
+
 .main-nav__toggle {
   position: absolute;
   width: 65px;
@@ -14,7 +15,6 @@
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
-
   position: absolute;
   top: 23px;
   left: 21px;

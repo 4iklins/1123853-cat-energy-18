@@ -9,6 +9,7 @@
   list-style: none;
   background-color: #ededed;
 }
+
 .product {
   display: flex;
   flex-direction: column;
@@ -20,16 +21,16 @@
   box-sizing: border-box;
   background-color: #ffffff;
 }
+
 .product__title {
   margin-left: 50%;
-
   // background-color:rgba(196, 79, 79, 0.5);
 }
+
 .product__link-title {
   display: block;
   width: 72px;
   height: 35px;
-  font-family: Oswald;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -41,15 +42,17 @@
   text-decoration: none;
   color: #111111;
 }
+
 .product__link-img {
   position: absolute;
   left: 20px;
 }
+
 .product__list {
   margin-left: 50%;
   // background-color:rgba(196, 79, 79, 0.5);
 
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
@@ -58,15 +61,19 @@
   letter-spacing: normal;
   color: #444444;
 }
+
 .product__field {
   text-align: left;
 }
+
 .product__value {
   text-align: right;
 }
+
 .product__button {
   margin-top: auto;
 }
+
 .product--to-all::after {
   content: "";
   position: absolute;

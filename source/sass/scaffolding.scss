@@ -13,19 +13,19 @@
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff");
 }
+
 body {
-  margin: 0;
-  padding: 0;
-
-  min-width: 320px;
   margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
 
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   color: #444444;
   font-style: normal;
   background-color: rgba(88, 221, 121, 0.685);
 }
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 

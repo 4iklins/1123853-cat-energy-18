@@ -2,13 +2,14 @@
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
+  background-color: #ffffff;
 
   &:hover,
   &:focus {
     opacity: 0.8;
   }
+
   &:active {
     opacity: 0.6;
   }
-  background-color: #ffffff;
 }
