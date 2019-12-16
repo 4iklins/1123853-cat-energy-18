@@ -6,3 +6,11 @@
 @mixin block-padding {
   padding: 0 20px;
 }
+
+@mixin title-line {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
+}

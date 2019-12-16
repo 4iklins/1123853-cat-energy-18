@@ -1,3 +1,5 @@
 .page-main {
   @include block-size;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,19 @@
+.profile {
+  background-color: #ffffff;
+}
+
+.profile__description {
+  @include block-padding;
+  padding-right: 40px;
+  margin-bottom: 26px;
+
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: #111111;
+}

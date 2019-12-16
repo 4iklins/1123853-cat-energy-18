@@ -1,0 +1,128 @@
+.example {
+  @include block-padding;
+  background-color: #f2f2f2;
+}
+
+.example__title {
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 10px;
+
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #111111;
+}
+
+.example__description {
+  padding-right: 5px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+  list-style: none;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.example__value {
+  min-width: 124px;
+
+  margin: 0;
+  padding: 9px 20px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.example__text {
+  margin: 0;
+  padding: 0 16px;
+  position: relative;
+  bottom: 9px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.example__cost {
+  margin-top: 10px;
+  margin-bottom: 33px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 33px;
+}
+
+.example__images {
+  position: relative;
+}
+
+.example__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 27px;
+  padding: 2px;
+}
+
+.example__button {
+  margin: 0 17px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+  cursor: pointer;
+  user-select: none;
+}
+
+.example__scale {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  width: 85px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.example__grip {
+  display: block;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+}
