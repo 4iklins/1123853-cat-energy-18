@@ -96,7 +96,7 @@
   background-color: #68b738;
 }
 
-.form__label-radio:hover.form__label-radio::before {
+.form__label-radio:hover::before {
   box-shadow: 0 0 0 1px #bababa;
 }
 
@@ -203,7 +203,7 @@
   background-size: 21px;
 }
 
-.form__label-check:hover.form__label-check::before {
+.form__label-check:hover::before {
   border: 1px solid #bababa;
 }
 

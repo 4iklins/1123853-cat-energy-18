@@ -1,6 +1,10 @@
+// Переменные
 @import "variables.scss";
+// Базовые параметры страницы
 @import "scaffolding.scss";
+// Миксины
 @import "mixin.scss";
+// Блоки
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
@@ -19,3 +23,6 @@
 @import "blocks/form.scss";
 @import "blocks/example.scss";
 @import "blocks/contacts.scss";
+@import "blocks/product.scss";
+@import "blocks/catalog-add.scss";
+@import "blocks/product-add.scss";
