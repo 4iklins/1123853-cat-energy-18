@@ -1,24 +1,20 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.copyright__link {
-  display: block;
-  width: 34px;
-  height: 37px;
   fill: #666666;
-}
 
-.copyright__text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 16px;
   letter-spacing: normal;
+  text-decoration: none;
+  color: #444444;
+}
+
+.copyright__link-icon {
+  width: 27px;
+  height: 34px;
 }
 
 .copyright__link:hover,

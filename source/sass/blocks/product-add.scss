@@ -1,0 +1,39 @@
+.product-add__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.product-add__title {
+  margin: 13px 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  columns: #222222;
+}
+
+.product-add__list {
+  width: 100%;
+  margin-bottom: 14px;
+  border-collapse: collapse;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: normal;
+  text-align: left;
+  columns: #444444;
+}
+
+.product-add__value {
+  text-align: right;
+}
+
+.product-add__button {
+  font-size: 16px;
+}

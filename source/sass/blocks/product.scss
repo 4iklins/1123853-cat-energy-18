@@ -1,0 +1,122 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 320px;
+  min-height: 208px;
+  margin-bottom: 1px;
+  padding: 0 20px 22px 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.product__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.product__link-title {
+  display: block;
+  min-height: 35px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+}
+
+.product__link-img {
+  order: -1;
+  height: 144px;
+  text-decoration: none;
+}
+
+.product__list {
+  border-collapse: collapse;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #444444;
+}
+
+.product__field {
+  text-align: left;
+}
+
+.product__value {
+  text-align: right;
+}
+
+.product__button {
+  font-size: 16px;
+  margin-top: auto;
+}
+
+.product--to-all {
+  flex-direction: column;
+  padding-top: 27px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    align-self: center;
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-position: center;
+    opacity: 0.2;
+  }
+}
+
+.product__to-all {
+  margin: 0;
+  margin-top: 22px;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.product__paragraph {
+  margin: 0;
+  margin-top: 7px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+}
+
+.product__button--to-all {
+  background-color: #f2f2f2;
+  color: #444444;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
+  }
+}
