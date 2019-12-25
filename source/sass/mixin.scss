@@ -7,6 +7,14 @@
   padding: 0 20px;
 }
 
+@mixin block-padding-tablet {
+  padding: 0 30px;
+}
+
+@mixin block-padding-desktop {
+  padding: 0 40px;
+}
+
 @mixin title-line {
   position: relative;
   font-size: 24px;

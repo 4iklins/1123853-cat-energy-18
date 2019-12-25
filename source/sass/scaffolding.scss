@@ -23,7 +23,7 @@ body {
   font-size: 14px;
   color: #444444;
   font-style: normal;
-  background-color: rgba(88, 221, 121, 0.685);
+  background-color: #ffffff;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -40,4 +40,16 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: $desktop-width;
+  }
 }
