@@ -1,13 +1,7 @@
 .programs {
-  @include block-padding;
+  @include container;
   box-sizing: border-box;
   background-color: #ffffff;
-}
-
-@media (min-width: $tablet-width) {
-  .programs {
-    @include block-padding-tablet;
-  }
 }
 
 @media (min-width: $desktop-width) {

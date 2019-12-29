@@ -22,3 +22,21 @@
   font-weight: normal;
   background-image: linear-gradient(to bottom, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
 }
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    max-width: $desktop-width;
+  }
+}
+

@@ -1,12 +1,6 @@
-.catalog__title {
-  padding-bottom: 10px;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-}
-
 @media (min-width: $tablet-width) {
-  .catalog__title {
-    border: none;
+  .catalog {
+    @include container;
   }
 }
 
@@ -19,8 +13,16 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
+
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+   margin-top: 58px;
   }
 }

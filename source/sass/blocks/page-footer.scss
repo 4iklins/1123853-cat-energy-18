@@ -1,22 +1,29 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-
-  @include block-padding;
-
   min-height: 236px;
-  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    min-height: 150px;
+    padding-top: 37px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
+  }
+}
+
+.page-footer__wrapper{
+  display: flex;
+  flex-direction: column;
+
+  @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 150px;
-
-    @include block-padding-tablet;
   }
 }
 

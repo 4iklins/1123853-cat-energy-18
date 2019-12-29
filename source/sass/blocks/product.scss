@@ -11,10 +11,10 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    margin: 110px 30px 30px;
-    padding: 40px 38px;
-    width: 324px;
-    background-color: #f2f2f2;
+    flex-direction: column;
+    width: calc(50% - 30px);
+    padding: 0 38px 40px 38px;
+    background-image: linear-gradient(to bottom,#fff,#fff 82px,#f2f2f2 82px,#f2f2f2);
   }
 }
 
@@ -33,6 +33,12 @@
   width: 50%;
 }
 
+@media (min-width: $tablet-width) {
+  .product__wrapper {
+    width: auto;
+  }
+}
+
 .product__link-title {
   display: block;
   min-height: 35px;
@@ -45,10 +51,43 @@
   color: #111111;
 }
 
+@media (min-width: $tablet-width) {
+  .product__link-title {
+    max-width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+
 .product__link-img {
   order: -1;
   height: 144px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .product__link-img {
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 208px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .product__img{
+    width: 324px;
+    height: 208px;
+  }
 }
 
 .product__list {
@@ -63,12 +102,36 @@
   color: #444444;
 }
 
+@media (min-width: $tablet-width) {
+  .product__list {
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 33px;
+
+    tr {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+}
+
 .product__field {
   text-align: left;
 }
 
+@media (min-width: $tablet-width) {
+  .product__field {
+    padding: 8px 0;
+  }
+}
+
 .product__value {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .product__value {
+    padding: 8px 0;
+  }
 }
 
 .product__button {
@@ -97,9 +160,11 @@
 
 @media (min-width: $tablet-width) {
   .product--to-all {
-    margin: 110px 30px 30px;
-    padding: 40px 38px;
-    width: 324px;
+    align-self: flex-end;
+    padding: 0 38px 40px 38px;
+    width: calc(50% - 30px);
+    height: 432px;
+    background-image: none;
     background-color: #ffffff;
     border: 1px solid #ededed;
   }
