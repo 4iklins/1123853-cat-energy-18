@@ -4,15 +4,15 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding:0;
+    padding: 0;
     border-top: 1px solid #cdcdcd;
     background-color: #ffffff;
   }
 }
 
 .example__wrapper {
-    @include container;
-  }
+  @include container;
+}
 
 .example__title {
   margin: 0;
@@ -57,7 +57,7 @@
 
 @media (min-width: $tablet-width) {
   .example__list-wrapper {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
   }
@@ -134,7 +134,7 @@
     background-color: #ffffff;
 
     br {
-      display :none;
+      display: none;
     }
   }
 }
@@ -148,7 +148,7 @@
 
 @media (min-width: $tablet-width) {
   .example__cost {
-    width:174px;
+    width: 174px;
     margin-top: 18px;
     font-size: 20px;
     line-height: 1.5;
@@ -165,7 +165,7 @@
 
 @media (min-width: $tablet-width) {
   .example__slider {
-    background-image: linear-gradient(#ffffff 0,#ffffff 180px,#f2f2f2 180px,#f2f2f2 100%);
+    background-image: linear-gradient(#ffffff 0, #ffffff 180px, #f2f2f2 180px, #f2f2f2 100%);
     overflow: hidden;
   }
 }
@@ -221,7 +221,7 @@
     width: 690px;
     height: 517px;
 
-    &--after{
+    &--after {
       z-index: 1;
     }
   }
@@ -259,7 +259,7 @@
     padding: 6px 0;
     font-size: 20px;
     line-height: 1;
-    border-bottom: 1px dotted rgba(0,0,0,.3);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -305,7 +305,7 @@
 
     &:hover,
     &:focus {
-      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:active {
