@@ -86,6 +86,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .intro__heading {
+    margin-top: 60px;
+    margin-left: 80px;
+  }
+}
+
 .intro__slogan {
   margin: 28px 0;
   font-size: 14px;
@@ -98,6 +105,12 @@
     margin: 40px 0 48px 100px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__slogan {
+    margin: 40px 0 48px 80px;
   }
 }
 
@@ -119,6 +132,8 @@
 
 @media (min-width: $desktop-width) {
   .intro__programs {
-    margin-top: 13px;
+    margin-top: 4px;
+    margin-left: 80px;
+    padding: 16px 27px;
   }
 }

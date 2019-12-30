@@ -12,8 +12,8 @@
       top: 0;
       bottom: 0;
       right: 0;
-      left: calc(50% + 40px);
-      // background-color: #63a73a;
+      left: 50%;
+      background-color: #63a73a;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -38,6 +38,8 @@
     align-items: center;
     min-height: 105px;
     background-color: #ffffff;
+
+    @include container;
   }
 }
 
@@ -52,4 +54,10 @@
   height: 65px;
   padding-top: 12px;
   padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    padding-left: 0;
+  }
 }
