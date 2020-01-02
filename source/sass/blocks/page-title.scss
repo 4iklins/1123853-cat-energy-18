@@ -1,9 +1,8 @@
 .page-title {
-  // height: 95px;
   box-sizing: border-box;
 
   margin: 0;
-  padding: 16px 20px 27px 20px;
+  padding: 27px 0 38px;
   background-color: #ffffff;
 
   font-size: 36px;
@@ -14,4 +13,11 @@
   letter-spacing: normal;
   text-align: left;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    padding: 36px 0 56px;
+    font-size: 60px;
+  }
 }

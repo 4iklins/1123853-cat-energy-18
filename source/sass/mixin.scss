@@ -2,9 +2,17 @@
   width: 320px;
   margin: 0 auto;
 }
-
+// Временно оставил эти отступы, пока не переделал все страницы
 @mixin block-padding {
   padding: 0 20px;
+}
+
+@mixin block-padding-tablet {
+  padding: 0 30px;
+}
+
+@mixin block-padding-desktop {
+  padding: 0 40px;
 }
 
 @mixin title-line {
@@ -13,4 +21,21 @@
   line-height: 24px;
   font-weight: normal;
   background-image: linear-gradient(to bottom, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
+}
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    max-width: $desktop-width;
+  }
 }
