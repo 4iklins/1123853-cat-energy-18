@@ -2,10 +2,29 @@
   background-color: #ffffff;
 }
 
+.profile__title {
+  padding-left: 20px;
+  border-top: 1px solid #cdcdcd;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__title {
+    padding-left: calc((100vw - 768px) / 2 + 30px);
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile__title {
+    padding-left: calc((100vw - 1300px) / 2 + 40px);
+  }
+}
+
 .profile__description {
-  @include block-padding;
+  padding-left: 20px;
   padding-right: 40px;
-  margin-bottom: 26px;
+  margin-top: 0;
+  margin-bottom: 24px;
 
   font-size: 14px;
   font-weight: normal;
@@ -16,4 +35,21 @@
   text-align: left;
   text-transform: uppercase;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__description {
+    width: 362px;
+    margin-bottom: 44px;
+    padding-left: calc((100vw - 768px) / 2 + 70px);
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile__description {
+    padding-left: calc((100vw - 1300px) / 2 + 40px);
+  }
 }
