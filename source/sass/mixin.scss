@@ -21,6 +21,12 @@
   line-height: 24px;
   font-weight: normal;
   background-image: linear-gradient(to bottom, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 22px, #68b738 22px, #68b738 25px, transparent 25px, transparent 100%);
+  }
 }
 
 @mixin container {
