@@ -19,17 +19,19 @@
   @include container;
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 42px;
+    padding-bottom: 33px;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer {
-    @include block-padding-desktop;
   }
 }
 
@@ -48,9 +50,17 @@
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     margin: 0;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 }
 
 .page-footer__copyright {
   padding: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    padding: 9px 0 11px;
+  }
 }

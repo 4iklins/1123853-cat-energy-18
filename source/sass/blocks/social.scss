@@ -9,6 +9,19 @@
   border-bottom: 1px solid #cdcdcd;
 }
 
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0 0 2px 31px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding: 0 0 4px 26px;
+  }
+}
+
 .social__link {
   display: flex;
   justify-content: center;
@@ -19,6 +32,12 @@
   fill: #666666;
 }
 
+@media (min-width: $tablet-width) {
+  .social__link {
+    margin: 0 5px;
+  }
+}
+
 .social__link:hover,
 .social__link:active {
   fill: #68b738;
@@ -27,4 +46,31 @@
 .social__link:active {
   fill: #68b738;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .social__link--vk {
+    .social__link-icon {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  .social__link--instagram {
+    margin-left: 9px;
+
+    .social__link-icon {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  .social__link--fb {
+    margin-left: 2px;
+
+    .social__link-icon {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }
