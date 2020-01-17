@@ -2,6 +2,12 @@
   position: relative;
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav {
+    margin-top: 64px;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   width: 65px;

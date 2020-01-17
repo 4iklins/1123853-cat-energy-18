@@ -9,9 +9,19 @@
   color: #111111;
 }
 
+
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    font-size: 20px;
   }
 }
 
@@ -22,10 +32,66 @@
   background-color: #ffffff;
 }
 
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    align-items: center;
+    margin-left: 36px;
+    height: auto;
+
+    &--active {
+      border-bottom: 2px solid #63a73a;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    background-color: transparent;
+    margin-left: 35px;
+  }
+
+  .site-list--index .site-list__item {
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+}
+
+
 .site-list__link {
   display: inline-block;
   margin: auto;
   text-decoration: none;
   color: #111111;
   vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    margin: 8px 0;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: rgba(17, 17, 17, 0.6);
+    }
+
+    &[href]:active {
+      color: rgba(17, 17, 17, 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list--index .site-list__link {
+    color: #ffffff;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &[href]:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
