@@ -108,7 +108,7 @@
 
 @media (min-width: $tablet-width) {
   .form__wrapper--border {
-    padding: 47px 28px 12px;
+    padding: 12px 28px;
     margin: 0 40px;
     border: 1px solid #cdcdcd;
   }
@@ -234,7 +234,6 @@
 
 .form__field-icon {
   position: absolute;
-  right: 34px;
 
   .form__field:active + &,
   .form__field:focus + & {
@@ -244,6 +243,18 @@
   .form__field:active:invalid + &,
   .form__field:focus:invalid + & {
     fill: #ff8282;
+  }
+}
+
+.form__item--email {
+  .form__field-icon {
+    right: 16px;
+  }
+}
+
+.form__item--tel {
+  .form__field-icon {
+    right: 14px;
   }
 }
 
