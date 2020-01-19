@@ -18,9 +18,6 @@
   }
 }
 
-.example__wrapper {
-  @include container;
-}
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
@@ -32,10 +29,11 @@
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
-    @include container;
-
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1300px;
   }
 
   .example .example__wrapper {
@@ -43,11 +41,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
   .example__content {
     @include container;
   }
-}
 
 @media (min-width: $desktop-width) {
   .example__content {
