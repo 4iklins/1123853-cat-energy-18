@@ -41,9 +41,9 @@
   }
 }
 
-  .example__content {
-    @include container;
-  }
+.example__content {
+  @include container;
+}
 
 @media (min-width: $desktop-width) {
   .example__content {

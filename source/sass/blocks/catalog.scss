@@ -7,14 +7,14 @@
 
 @media (min-width: $tablet-width) {
   .catalog .catalog__title {
-    padding-left: calc((100vw - 768px)/2 + 30px);
+    padding-left: calc((100vw - 768px) / 2 + 30px);
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog .catalog__title {
-    padding-left: calc((100vw - 1300px)/2 + 40px);
+    padding-left: calc((100vw - 1300px) / 2 + 40px);
   }
 }
 
