@@ -83,7 +83,7 @@
   line-height: 20px;
   letter-spacing: normal;
   text-align: left;
-  columns: #444444;
+  color: #444444;
 }
 
 @media (min-width: $tablet-width) {
@@ -119,6 +119,10 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
+  }
+
+  iframe {
+    width: 100%;
   }
 }
 
