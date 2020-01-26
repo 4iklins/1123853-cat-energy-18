@@ -1,8 +1,14 @@
 .advantages {
-  min-height: 427px;
+  min-height: 447px;
 
   box-sizing: border-box;
   background-color: #ffffff;
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    min-height: 427px;
+  }
 }
 
 .advantages__wrapper {
@@ -25,7 +31,7 @@
   box-sizing: border-box;
 
   margin: 0;
-  padding: 16px 0 27px;
+  padding: 16px 0 28px;
   background-color: #ffffff;
 
   font-size: 36px;

@@ -21,7 +21,7 @@
 
   .product:last-child {
     min-height: 432px;
-    padding-top: 50px;
+    padding-top: 52px;
   }
 }
 
@@ -70,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .product__link-title {
-    max-width: 135px;
+    width: 135px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 18px;
@@ -161,7 +161,7 @@
 
 @media (min-width: $tablet-width) {
   .product__button-wrapper {
-    padding: 0 38px 40px;
+    padding: 0 38px 38px;
   }
 }
 
@@ -173,7 +173,7 @@
 
 @media (min-width: $tablet-width) {
   .product__button {
-    margin-top: auto;
+    margin-top: 2px;
   }
 }
 
@@ -197,7 +197,7 @@
 @media (min-width: $tablet-width) {
   .product--to-all {
     align-self: flex-end;
-    padding: 0 38px 40px 38px;
+    padding: 0 38px 38px 38px;
     width: calc(50% - 30px);
     height: 432px;
     background-image: none;
@@ -213,7 +213,8 @@
 
 @media (min-width: $desktop-width) {
   .product--to-all {
-    padding: 41px 38px;
+    // justify-content: flex-end;
+    padding: 38px 38px;
     width: 245px;
     min-height: 514px;
     background-color: #ffffff;
@@ -223,7 +224,7 @@
 
 .product__to-all {
   margin: 0;
-  margin-top: 22px;
+  margin-top: 12px;
 
   font-size: 16px;
   font-weight: normal;
@@ -239,7 +240,7 @@
 @media (min-width: $tablet-width) {
   .product__to-all {
     width: 150px;
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 20px;
     align-self: center;
   }
@@ -247,7 +248,7 @@
 
 .product__paragraph {
   margin: 0;
-  margin-top: 7px;
+  padding-bottom: 12px;
 
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -264,7 +265,8 @@
   .product__paragraph {
     align-self: center;
     width: 170px;
-    margin-top: 25px;
+    // margin-top: 25px;
+    padding-bottom: 55px;
     font-size: 16px;
     line-height: normal;
   }

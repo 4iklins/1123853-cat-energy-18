@@ -39,6 +39,12 @@
   background-color: #f2f2f2;
 }
 
+@media (max-width: $mobile-width-only) {
+  .programs__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .programs__item {
     width: 708px;
@@ -277,7 +283,6 @@
 
 .programs__link:active.programs__link::after {
   background-image: url("../img/icon-right-arrow-verylong.svg");
-  opacity: 0.3;
 }
 
 .programs__link:active {

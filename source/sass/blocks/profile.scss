@@ -5,6 +5,7 @@
 .profile__title {
   padding-left: 20px;
   border-top: 1px solid #cdcdcd;
+  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,7 +41,8 @@
 @media (min-width: $tablet-width) {
   .profile__description {
     width: 362px;
-    margin-bottom: 44px;
+    margin-top: 30px;
+    margin-bottom: 48px;
     padding-left: calc((100vw - 768px) / 2 + 70px);
 
     font-size: 20px;
