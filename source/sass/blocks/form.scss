@@ -43,7 +43,7 @@
 @media (min-width: $tablet-width) {
   .form__wrapper:nth-child(1) {
     margin: 0 40px;
-    padding-bottom: 54px;
+    padding-bottom: 53px;
   }
 }
 
@@ -103,6 +103,7 @@
 
 @media (min-width: $tablet-width) {
   .form__field {
+    line-height: 30px;
     padding: 10px 19px;
   }
 }
@@ -125,7 +126,7 @@
   .form__wrapper--border {
     width: 570px;
     height: 195px;
-    margin: 20px 0 auto;
+    margin: 18px 0 auto;
     box-sizing: border-box;
   }
 }
@@ -140,7 +141,7 @@
 
 @media (min-width: $tablet-width) {
   .form__item-radio {
-    margin: 13px 0;
+    margin: 14px 0;
   }
 }
 
@@ -207,7 +208,7 @@
 
 @media (min-width: $tablet-width) {
   .form__title-line {
-    margin: 76px 0 76px;
+    margin: 75px 0 76px;
     padding-left: calc((100vw - 768px) / 2 + 30px);
 
     .form__title {
